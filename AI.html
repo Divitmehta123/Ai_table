@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+#analyze_btn{
+    
+        border: 3.5px solid #0a1347;
+        background-color: transparent;
+        height:4vh;
+        width:6.5vw;
+        border-radius:5px;
+        font-size:23px;
+        text-align: center;
+       
+      
+     }
+
+
+     body {
+         background: #101827;
+         color: #fff;
+         font-family: 'Lato', Arial, sans-serif;
+     }
+
+     h1 {
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         letter-spacing: -0.01em;
+         font-weight: 700;
+         font-style: normal;
+         font-size: 50px;
+         margin-left: -3px;
+         line-height: 1em;
+         color: #fff;
+         text-align: center;
+         text-rendering: optimizeLegibility;
+         margin-bottom:4vh;
+     }
+
+     table {
+         width: 80%;
+         margin: auto;
+         margin-top:4vh;
+     }
+td{
+    border-radius:8px;
+}
+     table, th, td {
+        font-family: "Poppins", sans-serif;
+         border-collapse: collapse;
+         text-align:center;
+         transition:ease-in-out 0.2s;
+     }
+
+    td:hover{
+        background-color: #14223d;
+    }
+
+     th, td {
+         padding: 5px;
+     }
+.diff_background{
+    background-color: #1a2539;
+   
+}
+     #unique_th{
+        padding:10px;
+        border:2px solid white;
+     }
+
+     #unique_th_c{
+        padding:10px;
+        border-left:2px solid white;
+     }
+
+     #unique_th_c_bottom{
+        padding:10px;
+        border-left:2px solid white;
+        border-bottom:2px solid white;
+     }
+
+     #unique_th_s{
+        padding:10px;
+        border-right:2px solid white;
+        border-top-right-radius:8px;
+        border-bottom-right-radius:8px;
+     }
+
+     #unique_th_s_bottom{
+        padding:10px;
+        border-right:2px solid white;
+        border-bottom:2px solid white;
+     }
+   
+     #curved_border{
+        border-top-left-radius:7px;
+        border-bottom-left-radius:7px;
+    }
+   
+    thead{
+        margin-bottom:5vh;
+     }
+
+</style>
+
+</head>
+<body>
+ 
+    <table readonly="false">
+        <thead>
+            <tr>
+                <th rowspan="1"></th>
+                <th rowspan="1"></th>
+                <th rowspan="1"></th>
+                <th rowspan="1"></th>
+                <th colspan="2" id="unique_th">Price</th>
+            </tr>
+
+            <tr>
+                <th rowspan="1" class="diff_background" id="curved_border" editable>Item_name</th>
+                <th rowspan="1" class="diff_background">Category</th>
+                <th rowspan="1" class="diff_background">Sales_quantity</th>
+                <th rowspan="1" class="diff_background">Stock</th>
+                <th rowspan="1" class="diff_background" id="unique_th_c">C.Price</th>
+                <th rowspan="1" class="diff_background" id="unique_th_s">S.Price</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bottle</td>
+                <td>Tech</td>
+                <td>2</td>
+                <td>200</td>
+                <td id="unique_th_c">300</td>
+                <td id="unique_th_s">600</td>
+            </tr>
+            <tr>
+                <td>PIR Light</td>
+                <td>General Purpose</td>
+                <td>56</td>
+                <td>200</td>
+                <td id="unique_th_c">250</td>
+                <td id="unique_th_s">500</td>
+            </tr>
+            <tr>
+                <td>Mechanical Keyboard</td>
+                <td>Accessories</td>
+                <td>16</td>
+                <td>90</td>
+                <td id="unique_th_c">900</td>
+                <td id="unique_th_s">1,500</td>
+            </tr>
+            <tr>
+                <td>Membrane Keyboard</td>
+                <td>Accessories</td>
+                <td>4</td>
+                <td>30</td>
+                <td id="unique_th_c">500</td>
+                <td id="unique_th_s">1,000</td>
+            </tr>
+            <tr>
+                <td>Intel i9 12gen</td>
+                <td>Processor</td>
+                <td>16</td>
+                <td>40</td>
+                <td id="unique_th_c">10,000</td>
+                <td id="unique_th_s">18,000</td>
+
+            </tr>
+            <tr>
+                <td>Intel i7 12gen</td>
+                <td>Processor</td>
+                <td>7</td>
+                <td>20</td>
+                <td id="unique_th_c_bottom">8,000</td>
+                <td id="unique_th_s_bottom">1,500</td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
